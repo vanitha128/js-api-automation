@@ -1,0 +1,22 @@
+{
+  "name": "apiautomationmocha",
+  "version": "1.0.0",
+  "description": "Api Test Automation",
+  "scripts": {
+    "mock": "nohup json-server --watch data/mock-db.json &",
+    "test": "mocha tests/*.js --reporter mochawesome",
+    "test-weather": "mocha tests/GetCurrentWeatherConditionsTest.js --reporter mochawesome",
+    "test-mock": "mocha tests/BooksMockAPITests.js --reporter mochawesome"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "json-server": "^0.16.1",
+    "mocha": "^8.1.1",
+    "mocha-data-driven": "^1.0.1",
+    "mochawesome": "^6.1.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "should": "^13.2.3",
+    "sleep": "^6.3.0"
+  }
+}
